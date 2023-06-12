@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@font-face {
+  src: url("../fonts/Sacramento-Regular.ttf");
+  font-family: "Sacramento";
+}
+@font-face {
+  src: url("../fonts/OpenSans-Semibold.ttf");
+  font-family: "OpenSemi";
+}
+@font-face {
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-family: "OpenBold";
+}
+:root {
+  --main-pink: #ffedeb;
+  --accent: #f9b4ab;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--main-pink);
+}
+header {
+  height: 60px;
+  width: 100vw;
+  background: #ffedeb;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header h1 a {
+  font-weight: 400;
+  font-size: 32px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Sacramento";
+  color: black;
+  text-decoration: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 50px;
+}
+nav ul li a {
+  font-size: 16px;
+  font-family: "OpenBold";
+  padding: 0 10px;
+  transition: 0.3s;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background: rgba(249, 180, 171, 0.65);
+}
+header .active {
+  background: rgba(249, 180, 171, 0.65);
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background: url("../images/cetka.png") no-repeat right center;
+  background-size: contain;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10%;
+  max-width: 630px;
+  text-align: center;
+}
+.container h1 {
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 204px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Sacramento";
+}
+.subheading {
+  font-family: "OpenSemi";
+  font-size: 32px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 43px;
+  margin: 30px 0 50px;
+  text-align: center;
+}
+.subheading span {
+  font-family: "Sacramento";
+}
+.button {
+  font-family: "OpenBold";
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 0;
+  width: 360px;
+  background-color: var(--accent);
+  transition: 0.3s;
+}
+.button:hover {
+  background: white;
+}
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(0deg, var(--main-pink), rgba(0, 0, 0, 0));
+}
+.gradient-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(180deg, var(--main-pink), rgba(0, 0, 0, 0));
+}
+.row {
+  display: flex;
+  padding: 100px 20px;
+  gap: 30px;
+}
+.row img {
+  width: 60%;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: white;
+  display: block;
+}
+.row .text-box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  min-height: 100vh;
+  position: relative;
+  background: url("../images/form.png") no-repeat left center;
+  background-size: cover;
+}
+.form-container {
+  max-width: 460px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  border-radius: 2px;
+}
+form {
+  padding: 20px;
+  background: rgba(255, 237, 235, 0.75);
+  border: 20px solid #f9b4ab;
+  border-radius: 5px;
+  border-radius-inner: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+input {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 8px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+textarea {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 5px 8px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  border-radius: 3px;
+  width: 100%;
+}
+form button {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  border: 0;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #f9b4ab;
+}
+/* O nama */
+.onama-text {
+  padding: 120px 0;
+  max-width: 590px;
+}
+.onama-text h2 {
+  font-family: "OpenBold";
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.onama-text p {
+  font-size: 32px;
+  font-family: "Inter";
+  line-height: 38px;
+}
+.onama-text p:first-of-type {
+  margin-bottom: 50px;
+}
+.filter img {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f9b4ab;
+}
+.lista {
+  min-height: 100vh;
+  background: url("../images/lista.png") no-repeat right center;
+  background-size: contain;
+  position: relative;
+}
+.lista .wrapper {
+  height: 100vh;
+}
+.lista .lista-text {
+  max-width: 566px;
+}
+.lista li {
+  font-size: 32px;
+  font-family: "OpenBold";
+}
+
+.cards {
+  background: url("../images/cards.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+.cards h2 {
+  text-align: center;
+  font-family: "OpenSemi";
+  padding: 120px 0 50px 0;
+  font-size: 32px;
+}
+.card {
+  max-width: 750px;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px auto;
+}
+.card-text {
+  background: rgba(249, 180, 171, 0.65);
+  padding: 30px;
+}
+.card-text h3 {
+  font-family: "OpenSemi";
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.card-text p {
+  font-size: 20px;
+  font-family: "Inter";
+}
+.card img {
+  margin-left: 20px;
+}
+
+.kontakt {
+  padding-top: 120px;
+  text-align: center;
+  background: url("../images/kontakt.png") no-repeat top center;
+  background-size: contain;
+  padding-bottom: 20px;
+}
+.kontakt h2 {
+  text-shadow: none;
+  font-family: "OpenBold";
+}
+.icon-list {
+  margin: 0 auto;
+  max-width: 340px;
+}
+.icon-list ul li {
+  margin: 5px 0;
+  font-size: 20px;
+  font-family: "OpenBold";
+  list-style: none;
+}
+.icon-list ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  text-decoration: none;
+}
+.kontakt > img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 4px;
+  border: 20px solid #f9b4ab;
+}
+
+.prijava {
+  min-height: 100vh;
+  position: relative;
+  background: url("../images/prijava.png") no-repeat left center;
+  background-size: contain;
+}
+.prijava form {
+  max-width: 470px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  height: 60px;
+  background: #ffedeb;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+footer p {
+  font-size: 24px;
+  font-family: "Inter";
+}
