@@ -340,6 +340,112 @@ form button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.product-list {
+  background: url("../images/cards.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 140px;
+}
+.product-list h1 {
+  font-size: 40px;
+  font-family: "OpenBold";
+  padding: 100px 0 30px;
+  text-align: center;
+}
+.product-list .wrapper {
+  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.product-card {
+  border-radius: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px;
+  min-height: 400px;
+}
+.product-card h2 {
+  font-family: "OpenBold";
+  font-size: 36px;
+  text-align: center;
+}
+.product-card:hover p {
+  opacity: 1;
+}
+.product-card p {
+  font-size: 16px;
+  font-family: "OpenBold";
+  margin: 30px 0 40px 0;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0;
+}
+.product-card:nth-of-type(1) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/vecernji-izlazak.jpeg") no-repeat center;
+  background-size: cover;
+}
+.product-card:nth-of-type(2) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/matura.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.product-card:nth-of-type(3) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/vencanje.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.product-card:nth-of-type(4) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/premium-vencanje.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.product-card:nth-of-type(5) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/devojacko-vece.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.product-card:nth-of-type(6) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/sminka-za-starije.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.product-card:nth-of-type(7) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/noc-vestica.jpeg") no-repeat center;
+  background-size: cover;
+}
+.product-card:nth-of-type(8) {
+  background: linear-gradient(
+      rgba(213, 202, 200, 0.45),
+      rgba(213, 202, 200, 0.45)
+    ),
+    url("../images/festivali.jpeg") no-repeat center;
+  background-size: cover;
+}
 footer {
   height: 60px;
   background: #ffedeb;
